@@ -6,7 +6,7 @@
     <meta name="author" content="Md Fahim Iftekhar" />
     <meta name="description" content="Shape and Color" />
     <meta name="keywords" content="Shape and color " />
-    <title>CSS</title>
+    <title>Shape Creator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,25 +28,29 @@
     <link rel="stylesheet" href="./assets/style/index.css" type="text/css" />
   </head>
   <body>
-    <div class="controls">
-      <label for="shape-select">Select Shape:</label>
-      <select id="shape-select">
+    <h1>Shape Creator</h1>
+    <div id="controls">
+      <label for="shapeSelect">Select Shape:</label>
+      <select id="shapeSelect">
         <option value="circle">Circle</option>
         <option value="square">Square</option>
       </select>
-      <label for="color-select">Select Color:</label>
-      <select id="color-select">
+      <label for="colorSelect">Select Color:</label>
+      <select id="colorSelect">
         <option value="#09f">Blue</option>
         <option value="#9f0">Green</option>
         <option value="#f90">Orange</option>
         <option value="#f09">Pink</option>
         <option value="#90f">Purple</option>
       </select>
-      <button id="create-button">Create</button>
+      <button id="createButton">Create</button>
     </div>
-    
-    <div id="container"></div>
-  
+    <div id="shapeSection" class="shape-section">
+      <h2>Shapes</h2>
+      <div id="shapeContainer" class="grid-container"></div>
+    </div>
+
+    <script src="./assets/script/classes.js"></script>
     <script src="./assets/script/index.js"></script>
   </body>
 </html>
