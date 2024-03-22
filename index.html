@@ -29,24 +29,22 @@
   </head>
   <body>
     <h1>Shape Creator</h1>
-    <div id="controls">
-      <label for="shapeSelect">Select Shape:</label>
-      <select id="shapeSelect">
+    <div id="controls" class="controls">
+      <select id="shapeSelect" class="menu" placeholder="Shape">
         <option value="circle">Circle</option>
         <option value="square">Square</option>
       </select>
-      <label for="colorSelect">Select Color:</label>
-      <select id="colorSelect">
+      <label for="colorSelect"></label>
+      <select id="colorSelect" class="menu">
         <option value="#09f">Blue</option>
         <option value="#9f0">Green</option>
         <option value="#f90">Orange</option>
         <option value="#f09">Pink</option>
         <option value="#90f">Purple</option>
       </select>
-      <button id="createButton">Create</button>
+      <button id="createButton" class="creat-button">Create</button>
     </div>
     <div id="shapeSection" class="shape-section">
-      <h2>Shapes</h2>
       <div id="shapeContainer" class="grid-container"></div>
     </div>
 
