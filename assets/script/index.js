@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const colorSelect = document.getElementById('colorSelect');
   const shapeContainer = document.getElementById('shapeContainer');
   const createButton = document.getElementById('createButton');
-  const shapeSection = document.getElementById('shapeSection');
+  const selectedShapeInfo = document.getElementById('selectedShapeInfo'); // New element
   const shapes = [];
 
   createButton.addEventListener('click', createShape);
@@ -29,10 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
       shapeContainer.appendChild(shapeDiv);
   }
   function displayShapeInfo(shape) {
-    const infoDiv = document.createElement('div');
-    infoDiv.classList.add('shape-info');
-    infoDiv.textContent = `Shape: ${shape.getName()}, Color: ${shape.getColor()}`;
-    shapeSection.appendChild(infoDiv);
-}
+    selectedShapeInfo.innerHTML = `Selected Shape: ${shape.name}, Color: ${shape.color}`;
+  }
 
+  createButton.addEventListener('click', createShape);
 });
+
